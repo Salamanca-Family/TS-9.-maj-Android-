@@ -50,6 +50,7 @@
             android:gravity="center"
             android:text="Техничка школа \n &quot;9. мај&quot;"
             android:textAlignment="center"
+            android:textColor="#BFBEBC"
             android:textSize="18dp" />
 
     </com.google.android.material.navigation.NavigationView>
