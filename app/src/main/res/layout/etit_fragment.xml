@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background"
+    android:backgroundTint="#7E000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".EtitFragment">
+
+    <TextView
+        android:id="@+id/etit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:text="Електротехничар информационих технологија"
+        android:textAlignment="center"
+        android:textColor="#00FFE1"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/etit_p1"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="22dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Циљ овог образовног профила је оспособљавање ученика да пројектују и имплементирају све облике апликативних софтверских производа, почевши од десктоп апликација, па све до статичких и динамичких апликација базираних на веб технологијама."
+        android:textColor="#00FFE1"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/etit_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etit_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/etit_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="У оквиру овог образовног профила, ученици се оспособљавају за:"
+        android:textColor="#00FFE1"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/etit_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etit_title" />
+
+    <ListView
+        android:id="@+id/etit_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="380dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fastScrollAlwaysVisible="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etit_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

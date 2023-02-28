@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background"
+    android:backgroundTint="#7E000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".ArmFragment"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TextView
+        android:id="@+id/tzkum_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:text="Администратор рачунарских мрежа"
+        android:textAlignment="center"
+        android:textColor="#9BFD55"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/tzkum_p1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Овај образовни профил захтева креативност, која се огледа преко програмирања компјутерски управљаних машина, основе компјутерске графике и пројектовања технолошких система. Уз помоћ компјутера обједињени су пројектовање, моделирање и производња."
+        android:textColor="#9BFD55"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/tzkum_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tzkum_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tzkum_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Ученици по завршеној школи нису везани само за машинску индустрију, него и за друге привредне делатности: фармација, медицина, текстилна индустрија..."
+        android:textColor="#9BFD55"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/tzkum_p3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tzkum_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tzkum_p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="324dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Настава је очигледна и спроводи се уз примену савремених наставних средстава и учила (видео пројектори, рачунари,симулатори рада машина као и саме машине са CNC управљањем) тако да ученици по завршетку овог школовања бивају оспособљени за практичан рад и примену онога што су кроз школовање научили."
+        android:textColor="#9BFD55"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/tzkum_p4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tzkum_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tzkum_p4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="На овом смеру ученици:"
+        android:textColor="#9BFD55"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tzkum_title" />
+
+    <ListView
+        android:id="@+id/tzkum_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fastScrollAlwaysVisible="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tzkum_p4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

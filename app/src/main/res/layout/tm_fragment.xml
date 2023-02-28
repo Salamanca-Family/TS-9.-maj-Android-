@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background"
+    android:backgroundTint="#7E000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".ArmFragment"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TextView
+        android:id="@+id/tm_p2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Поред послова одржавања хардвера и софтвера савремених мултимедијалних система, бићете оспособљени и за оперативне послове техничара студија, контроле слике, снимања и обраде звука, видео монтаже, графичке станице и сл."
+        android:textColor="#00FFE1"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/tm_p3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tm_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tm_p3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="388dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="У оквиру овог образовног профила, ученици се оспособљавају за:"
+        android:textColor="#00FFE1"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tm_title" />
+
+    <TextView
+        android:id="@+id/tm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:text="Техничар мултимедије"
+        android:textAlignment="center"
+        android:textColor="#00FFE1"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/tm_p1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Образовни профил Техничар мултимедије припрема ученике за динамичне послове у студијима за продукцију мултимедијалног садржаја, продукцијским кућама, телевизијским станицама, код тв, интернет и мобилних провајдера у делу послова који се односе на креирање и пренос слике и звука, као и у предузећима која се баве производњом и креирањем мултимедијалног садржаја."
+        android:textColor="#00FFE1"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/tm_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tm_title"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <ListView
+        android:id="@+id/tm_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tm_p3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

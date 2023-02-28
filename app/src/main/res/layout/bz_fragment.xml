@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background"
+    android:backgroundTint="#7E000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".EtitFragment">
+
+    <TextView
+        android:id="@+id/bz_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:text="Бравар - заваривач"
+        android:textAlignment="center"
+        android:textColor="#C145EF"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/bz_p1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="22dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Браварско занимање је једно од најтраженијих занимања."
+        android:textColor="#C145EF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/bz_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bz_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/bz_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Практична настава се одвија у школској радионици, а учење у добро опремљеним кабинетима."
+        android:textColor="#C145EF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/bz_p3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bz_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bz_p3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="По завршетку школовања, могуће је запослење у предузећима, могућ је самостални рад у сопственој радионици (уз минимална стартна улагања), а могуће је и дошколовати се на више степене образовања."
+        android:textColor="#C145EF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/bz_p4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bz_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bz_p4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Ученици који заврше овај занат могу обављати све врсте браварских послова:"
+        android:textColor="#C145EF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bz_title" />
+
+    <ListView
+        android:id="@+id/bz_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fastScrollAlwaysVisible="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bz_p4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background"
+    android:backgroundTint="#7E000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".ArmFragment"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TextView
+        android:id="@+id/mmv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:text="Механичар моторних возила"
+        android:textAlignment="center"
+        android:textColor="#C145EF"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/mmv_p2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Ово је образовни профил који:"
+        android:textColor="#C145EF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mmv_title" />
+
+    <TextView
+        android:id="@+id/mmv_p1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Образовни профил МЕХАНИЧАР МОТОРНИХ ВОЗИЛА, као модел са елементима дуалног образовања, уведен је у оквиру пројекта „Реформа средњег стручног образовања“ који спроводи Министарство просвете, науке и технолошког развоја уз подршку Немачке организације за међународну сарадњу ГИЗ, а под покровитељством Министарства за економску сарадњу и развој СР Немачке."
+        android:textColor="#C145EF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/mmv_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mmv_title"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ListView
+        android:id="@+id/mmv_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fastScrollAlwaysVisible="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mmv_p2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

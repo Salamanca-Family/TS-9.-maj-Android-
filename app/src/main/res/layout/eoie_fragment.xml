@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background"
+    android:backgroundTint="#7E000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".EtitFragment">
+
+    <TextView
+        android:id="@+id/eoie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:text="Електротехничар обновљивих извора енергије"
+        android:textAlignment="center"
+        android:textColor="#00FFE1"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/eoie_p1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="22dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Електротехничар обновљивих извора енергије је посебно атрактивно занимање и актуелно за привреду. Ученици су након школовања оспособљени да врше монтажу елемената попут фотонапонских система, ветросистема, хидросистема и постројења на биомасу."
+        android:textColor="#00FFE1"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/eoie_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/eoie_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/eoie_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Према наставном плану и програму Министарства просвете, науке и технолошког развоја, циљ је да се допринесе системском развоју области обновљивих извора енергије у нашој земљи. Знања и компетенције омогућују ученицима запослења у електродистрибуцијама, пројектним бироима, електросервисима и предузећима која се баве пројектовањем, изградњом и одржавањем система обновљивих извора енергије."
+        android:textColor="#00FFE1"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/eoie_p3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/eoie_title"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <TextView
+        android:id="@+id/eoie_p3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="435dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Током четворогодишњег школовања, ученици се обучавају о:"
+        android:textColor="#00FFE1"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/eoie_title" />
+
+    <ListView
+        android:id="@+id/eoie_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fastScrollAlwaysVisible="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eoie_p3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

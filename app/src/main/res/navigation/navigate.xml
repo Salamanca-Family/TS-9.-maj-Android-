@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.testdrive.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_EtitFragment"
+            app:destination="@+id/EtitFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_armFragment3"
+            app:destination="@id/armFragment3" />
+        <action
+            android:id="@+id/action_FirstFragment_to_tmFragment"
+            app:destination="@id/tmFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_eoieFragment"
+            app:destination="@id/eoieFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_tzkumFragment"
+            app:destination="@id/tzkumFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_mmvFragment"
+            app:destination="@id/mmvFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_bzFragment"
+            app:destination="@id/bzFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EtitFragment"
+        android:name="com.example.testdrive.EtitFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/etit_fragment">
+        <action
+            android:id="@+id/action_EtitFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/armFragment3"
+        android:name="com.example.testdrive.ArmFragment"
+        android:label="arm_fragment"
+        tools:layout="@layout/arm_fragment" >
+        <action
+            android:id="@+id/action_armFragment3_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tmFragment"
+        android:name="com.example.testdrive.TmFragment"
+        android:label="TmFragment" >
+        <action
+            android:id="@+id/action_tmFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eoieFragment"
+        android:name="com.example.testdrive.EoieFragment"
+        android:label="EoieFragment" >
+        <action
+            android:id="@+id/action_eoieFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tzkumFragment"
+        android:name="com.example.testdrive.TzkumFragment"
+        android:label="TzkumFragment" >
+        <action
+            android:id="@+id/action_tzkumFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mmvFragment"
+        android:name="com.example.testdrive.MmvFragment"
+        android:label="MmvFragment" >
+        <action
+            android:id="@+id/action_mmvFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bzFragment"
+        android:name="com.example.testdrive.BzFragment"
+        android:label="BzFragment" >
+        <action
+            android:id="@+id/action_bzFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

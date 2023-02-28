@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sampletxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="22dp"
+        android:text="Циљ овог образовног профила је оспособљавање ученика да пројектују и имплементирају све облике апликативних софтверских производа, почевши од десктоп апликација, па све до статичких и динамичких апликација базираних на веб технологијама."
+        android:textColor="#00FFE1"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+    >
+
+</TextView>
