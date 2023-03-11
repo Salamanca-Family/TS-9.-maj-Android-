@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -14,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.testdrive.databinding.EtitFragmentBinding;
 import com.example.testdrive.databinding.FragmentFirstBinding;
 import com.example.testdrive.databinding.EtitFragmentBinding;
 
@@ -32,7 +34,19 @@ public class EtitFragment extends Fragment {
     ) {
 
         binding = EtitFragmentBinding.inflate(inflater, container, false);
-
+        binding.etitList.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                binding.etitList.requestDisallowInterceptTouchEvent(true);
+                int action = event.getActionMasked();
+                switch (action) {
+                    case MotionEvent.ACTION_UP:
+                        binding.etitList.requestDisallowInterceptTouchEvent(false);
+                        break;
+                }
+                return false;
+            }
+        });
         return binding.getRoot();
 
     }

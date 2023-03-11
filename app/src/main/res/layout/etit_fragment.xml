@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/android_background"
     android:backgroundTint="#7E000000"
-    android:backgroundTintMode="src_over"
+    android:backgroundTintMode="src_over">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
     tools:context=".EtitFragment">
 
     <TextView
         android:id="@+id/etit_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoText="false"
         android:text="Електротехничар информационих технологија"
         android:textAlignment="center"
         android:textColor="#00FFE1"
@@ -62,18 +66,33 @@
 
     <ListView
         android:id="@+id/etit_list"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginBottom="40dp"
         android:clickable="false"
         android:contextClickable="false"
         android:fastScrollAlwaysVisible="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/flajer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/etit_title"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/etit_title" />
 
+    <ImageView
+        android:id="@+id/flajer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="588dp"
+        android:adjustViewBounds="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="40dp"
+        android:src="@drawable/etitflajer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etit_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
