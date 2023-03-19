@@ -6,7 +6,7 @@
         android:layout_marginTop="160dp"
         android:layout_marginBottom="22dp"
         android:text="Циљ овог образовног профила је оспособљавање ученика да пројектују и имплементирају све облике апликативних софтверских производа, почевши од десктоп апликација, па све до статичких и динамичких апликација базираних на веб технологијама."
-        android:textColor="#9BFD55"
+        android:textColor="#DAFBC2"
         android:textSize="18dp"
         android:paddingLeft="20dp"
         android:paddingRight="10dp"

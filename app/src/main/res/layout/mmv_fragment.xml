@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/android_background"
     android:backgroundTint="#7E000000"
-    android:backgroundTintMode="src_over"
-    tools:context=".ArmFragment"
-    tools:layout_editor_absoluteY="1dp">
+    android:backgroundTintMode="src_over">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MmvFragment">
 
     <TextView
         android:id="@+id/mmv_title"
@@ -36,12 +37,14 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="Ово је образовни профил који:"
-        android:textColor="#C145EF"
+        android:textColor="#EABFFA"
         android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/mmv_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mmv_title" />
+        app:layout_constraintTop_toTopOf="@+id/mmv_title"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/mmv_p1"
@@ -52,7 +55,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="Образовни профил МЕХАНИЧАР МОТОРНИХ ВОЗИЛА, као модел са елементима дуалног образовања, уведен је у оквиру пројекта „Реформа средњег стручног образовања“ који спроводи Министарство просвете, науке и технолошког развоја уз подршку Немачке организације за међународну сарадњу ГИЗ, а под покровитељством Министарства за економску сарадњу и развој СР Немачке."
-        android:textColor="#C145EF"
+        android:textColor="#EABFFA"
         android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/mmv_p2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,14 +66,32 @@
 
     <ListView
         android:id="@+id/mmv_list"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="40dp"
         android:clickable="false"
         android:contextClickable="false"
         android:fastScrollAlwaysVisible="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/mmvFlajer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mmv_title" />
+
+    <ImageView
+        android:id="@+id/mmvFlajer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:adjustViewBounds="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="40dp"
+        android:src="@drawable/mmvflajer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mmv_p2" />
+        app:layout_constraintTop_toBottomOf="@+id/mmv_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

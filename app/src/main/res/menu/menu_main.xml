@@ -4,7 +4,57 @@
     tools:context="com.example.testdrive.MainActivity">
     <item
         android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="101"
+        android:title="Више о школи"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/novosti"
         android:orderInCategory="102"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:title="Новости">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/novine"
+                    android:icon="@drawable/baseline_newspaper_24"
+                    android:title="Е-новине Техно6" />
+                <item
+                    android:id="@+id/takmicenja"
+                    android:icon="@drawable/baseline_science_24"
+                    android:title="Такмичења" />
+                <item
+                    android:id="@+id/radovi_ucenika"
+                    android:icon="@drawable/baseline_build_24"
+                    android:title="Радови ученика" />
+                <item
+                    android:id="@+id/aktivnosti_i_projekti"
+                    android:icon="@drawable/baseline_groups_24"
+                    android:title="Активности и пројекти" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/za_ucenike"
+        android:orderInCategory="103"
+        android:title="За ученике">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/raspored_casova"
+                    android:icon="@drawable/baseline_calendar_today_24"
+                    android:orderInCategory="101"
+                    android:title="Распоред часова" />
+                <item
+                    android:id="@+id/udzbenici"
+                    android:icon="@drawable/baseline_menu_book_24"
+                    android:orderInCategory="102"
+                    android:title="Уџбеници" />
+            </group>
+        </menu>
+    </item>
+
+
+
 </menu>

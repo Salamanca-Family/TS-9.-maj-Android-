@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#EED491"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/grb_link" />
+
+    <TextView
+        android:id="@+id/header_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Техничка школа &quot;9. мај&quot;"
+        android:textAlignment="textEnd"
+        android:textColor="#2E2D2D"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/brojTele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:text="📞 +381(21) 6041 472"
+        android:textAlignment="viewEnd"
+        android:textColor="#2E2D2D" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:text="✉ skola@9maj.rs"
+        android:textAlignment="viewEnd"
+        android:textColor="#2E2D2D" />
+</LinearLayout>

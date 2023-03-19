@@ -1,5 +1,6 @@
 package com.example.testdrive;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,9 +17,6 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.testdrive.databinding.EtitFragmentBinding;
-import com.example.testdrive.databinding.FragmentFirstBinding;
-import com.example.testdrive.databinding.EtitFragmentBinding;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -27,6 +25,7 @@ public class EtitFragment extends Fragment {
 
     private EtitFragmentBinding binding;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -45,6 +44,13 @@ public class EtitFragment extends Fragment {
                         break;
                 }
                 return false;
+            }
+        });
+        binding.flajer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(EtitFragment.this)
+                        .navigate(R.id.action_EtitFragment_to_etitFlajerFragment);
             }
         });
         return binding.getRoot();

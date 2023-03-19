@@ -1,8 +1,10 @@
 package com.example.testdrive;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -11,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.testdrive.databinding.ArmFragmentBinding;
 import com.example.testdrive.databinding.BzFragmentBinding;
@@ -22,6 +25,7 @@ public class BzFragment extends Fragment {
 
     private BzFragmentBinding binding;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -29,7 +33,26 @@ public class BzFragment extends Fragment {
     ) {
 
         binding = BzFragmentBinding.inflate(inflater, container, false);
-
+        binding.bzList.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                binding.bzList.requestDisallowInterceptTouchEvent(true);
+                int action = event.getActionMasked();
+                switch (action) {
+                    case MotionEvent.ACTION_UP:
+                        binding.bzList.requestDisallowInterceptTouchEvent(false);
+                        break;
+                }
+                return false;
+            }
+        });
+        binding.bzFlajer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(BzFragment.this)
+                        .navigate(R.id.action_bzFragment_to_bzFlajerFragment);
+            }
+        });
         return binding.getRoot();
 
     }

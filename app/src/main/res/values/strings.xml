@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ТШ "9. мај"</string>
-    <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -18,4 +17,7 @@
     <string name="EOIE">електротехничар обновљивих извора енергије</string>
     <string name="MMV">механичар моторних возила</string>
     <string name="BZ">бравар - заваривач</string>
+
+    <string name="navigation_drawer_open">Open navi drawer</string>
+    <string name="navigation_drawer_close">Close navi drawer</string>
 </resources>

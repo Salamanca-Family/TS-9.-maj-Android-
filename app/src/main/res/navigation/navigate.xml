@@ -20,9 +20,6 @@
             android:id="@+id/action_FirstFragment_to_tmFragment"
             app:destination="@id/tmFragment" />
         <action
-            android:id="@+id/action_FirstFragment_to_eoieFragment"
-            app:destination="@id/eoieFragment" />
-        <action
             android:id="@+id/action_FirstFragment_to_tzkumFragment"
             app:destination="@id/tzkumFragment" />
         <action
@@ -40,6 +37,9 @@
         <action
             android:id="@+id/action_EtitFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_EtitFragment_to_etitFlajerFragment"
+            app:destination="@id/etitFlajerFragment" />
     </fragment>
     <fragment
         android:id="@+id/armFragment3"
@@ -49,6 +49,9 @@
         <action
             android:id="@+id/action_armFragment3_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_armFragment3_to_armFlajerFragment"
+            app:destination="@id/armFlajerFragment" />
     </fragment>
     <fragment
         android:id="@+id/tmFragment"
@@ -57,14 +60,9 @@
         <action
             android:id="@+id/action_tmFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/eoieFragment"
-        android:name="com.example.testdrive.EoieFragment"
-        android:label="EoieFragment" >
         <action
-            android:id="@+id/action_eoieFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_tmFragment_to_tmFlajerFragment"
+            app:destination="@id/tmFlajerFragment" />
     </fragment>
     <fragment
         android:id="@+id/tzkumFragment"
@@ -73,6 +71,9 @@
         <action
             android:id="@+id/action_tzkumFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_tzkumFragment_to_tzkumFlajerFragment"
+            app:destination="@id/tzkumFlajerFragment" />
     </fragment>
     <fragment
         android:id="@+id/mmvFragment"
@@ -81,6 +82,9 @@
         <action
             android:id="@+id/action_mmvFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_mmvFragment_to_mmvFlajerFragment"
+            app:destination="@id/mmvFlajerFragment" />
     </fragment>
     <fragment
         android:id="@+id/bzFragment"
@@ -89,5 +93,57 @@
         <action
             android:id="@+id/action_bzFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_bzFragment_to_bzFlajerFragment"
+            app:destination="@id/bzFlajerFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/etitFlajerFragment"
+        android:name="com.example.testdrive.EtitFlajerFragment"
+        android:label="EtitFlajerFragment" >
+        <action
+            android:id="@+id/action_etitFlajerFragment_to_EtitFragment"
+            app:destination="@id/EtitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bzFlajerFragment"
+        android:name="com.example.testdrive.BzFlajerFragment"
+        android:label="BzFlajerFragment" >
+        <action
+            android:id="@+id/action_bzFlajerFragment_to_bzFragment"
+            app:destination="@id/bzFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/armFlajerFragment"
+        android:name="com.example.testdrive.ArmFlajerFragment"
+        android:label="ArmFlajerFragment" >
+        <action
+            android:id="@+id/action_armFlajerFragment_to_armFragment3"
+            app:destination="@id/armFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/mmvFlajerFragment"
+        android:name="com.example.testdrive.MmvFlajerFragment"
+        android:label="MmvFlajerFragment" >
+        <action
+            android:id="@+id/action_mmvFlajerFragment_to_mmvFragment"
+            app:destination="@id/mmvFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tmFlajerFragment"
+        android:name="com.example.testdrive.TmFlajerFragment"
+        android:label="TmFlajerFragment" >
+        <action
+            android:id="@+id/action_tmFlajerFragment_to_tmFragment"
+            app:destination="@id/tmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tzkumFlajerFragment"
+        android:name="com.example.testdrive.TzkumFlajerFragment"
+        android:label="TzkumFlajerFragment" >
+        <action
+            android:id="@+id/action_tzkumFlajerFragment_to_tzkumFragment"
+            app:destination="@id/tzkumFragment" />
+    </fragment>
+
 </navigation>

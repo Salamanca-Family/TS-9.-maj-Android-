@@ -1,5 +1,6 @@
 package com.example.testdrive;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,28 +10,39 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.MenuInflater;
 import android.view.View;
 
+import androidx.appcompat.view.menu.MenuBuilder;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.testdrive.databinding.ActivityMainBinding;
-import com.example.testdrive.databinding.ContentMainBinding;
+import com.example.testdrive.databinding.FragmentFirstBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
+import android.widget.PopupMenu;
 
-public class MainActivity extends AppCompatActivity{
+import org.jetbrains.annotations.NotNull;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-
+    private FragmentFirstBinding bind;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +50,13 @@ public class MainActivity extends AppCompatActivity{
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
+        bind = FragmentFirstBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        binding.sideMenu.bringToFront();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        binding.drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
 
-        setSupportActionBar(binding.toolbar);
-        getSupportActionBar().setTitle(null);
         binding.imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,13 +64,26 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(browserIntent);
             }
         });
+        binding.sideMenu.setNavigationItemSelectedListener(this);
+        binding.toolbar.setNavigationOnClickListener(this);
+        binding.back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.super.onBackPressed();
+            }
+        });
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
         decorView.setSystemUiVisibility(uiOptions);
     }
+    @SuppressLint("RestrictedApi")
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        if(menu instanceof MenuBuilder){
+            MenuBuilder m = (MenuBuilder) menu;
+            m.setOptionalIconsVisible(true);
+        }
         return true;
 
     }
@@ -72,4 +100,48 @@ public class MainActivity extends AppCompatActivity{
                 || super.onSupportNavigateUp();
     }
 
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        Intent browserIntent;
+        switch(item.getItemId()){
+            case R.id.novine:
+                browserIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://tehno6.wordpress.com"));
+                startActivity(browserIntent);
+                break;
+            case R.id.takmicenja:
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.9maj.rs/index.php/novosti/takmicenja"));
+                startActivity(browserIntent);
+                break;
+            case R.id.radovi_ucenika:
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.9maj.rs/index.php/novosti/radovi-ucenika"));
+                startActivity(browserIntent);
+                break;
+
+            case R.id.aktivnosti_i_projekti:
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.9maj.rs/index.php/novosti/projekti"));
+                startActivity(browserIntent);
+                break;
+            default:
+                break;
+        }
+        return true;
+    }
+    @Override
+    public void onBackPressed(){
+        if(binding.drawerLayout.isDrawerOpen(GravityCompat.START)){
+            binding.drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else{
+            super.onBackPressed();
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        if(binding.drawerLayout.isDrawerOpen((Gravity.RIGHT))){
+            binding.drawerLayout.closeDrawer(Gravity.RIGHT);
+        } else {
+            binding.drawerLayout.openDrawer(Gravity.RIGHT);
+        }
+    }
 }
