@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Environment;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.MenuInflater;
@@ -23,8 +24,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
@@ -37,6 +40,8 @@ import android.view.WindowManager;
 import android.widget.PopupMenu;
 
 import org.jetbrains.annotations.NotNull;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
@@ -104,6 +109,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item) {
         Intent browserIntent;
         switch(item.getItemId()){
+            case R.id.action_settings:
+                Navigation.findNavController(MainActivity.this,R.id.nav_host_fragment_content_main).navigate(R.id.OSkoli);
+                binding.drawerLayout.closeDrawer(Gravity.RIGHT);
+                break;
             case R.id.novine:
                 browserIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://tehno6.wordpress.com"));
                 startActivity(browserIntent);
@@ -121,6 +130,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.9maj.rs/index.php/novosti/projekti"));
                 startActivity(browserIntent);
                 break;
+            case R.id.raspored_casova:
+                browserIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://9maj.rs/images/docs/raspored/2209/odeljenja_8sep.pdf"));
+                startActivity(browserIntent);
             default:
                 break;
         }

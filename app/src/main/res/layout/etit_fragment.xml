@@ -71,6 +71,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="450dp"
             android:layout_marginBottom="40dp"
+            android:background="#72000000"
             android:clickable="false"
             android:contextClickable="false"
             android:fastScrollAlwaysVisible="true"

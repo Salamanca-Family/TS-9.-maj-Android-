@@ -145,5 +145,9 @@
             android:id="@+id/action_tzkumFlajerFragment_to_tzkumFragment"
             app:destination="@id/tzkumFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/OSkoli"
+        android:name="com.example.testdrive.OSkoli"
+        android:label="OSkoli" />
 
 </navigation>

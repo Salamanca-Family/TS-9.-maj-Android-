@@ -49,6 +49,7 @@ public class ArmFragment extends Fragment {
                 return false;
             }
         });
+
         return binding.getRoot();
 
     }
