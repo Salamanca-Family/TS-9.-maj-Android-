@@ -37,17 +37,20 @@
         android:theme="@style/Theme.TestDrive.AppBarOverlay">
 
 
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#353843"
+            android:background="@color/header_night"
+            android:backgroundTint="#34000000"
+            android:backgroundTintMode="src_over"
             android:gravity="center"
+            android:layoutDirection="rtl"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:buttonGravity="center_vertical"
-            android:layoutDirection="rtl">
+            app:subtitleTextColor="#2E2D2D"
+            app:titleTextColor="#2E2D2D">
 
             <ImageButton
                 android:id="@+id/imageButton"
@@ -70,8 +73,9 @@
                 android:layout_marginRight="50dp"
                 android:text="Техничка школа \n&quot;9. мај&quot;"
                 android:textAlignment="center"
-                android:textColor="#C3C2C0"
+                android:textColor="#2E2D2D"
                 android:textSize="18dp"
+                android:textStyle="bold"
                 app:layout_anchorGravity="bottom|center" />
         </androidx.appcompat.widget.Toolbar>
 

@@ -63,12 +63,13 @@
             android:height="50dp"
             android:background="#00FFFFFF"
             android:text="@string/MMV"
-            android:textColor="#C145EF"
+            android:textColor="#D76BFF"
             android:textSize="15dp"
             app:icon="@drawable/mmv"
             app:iconGravity="textTop"
             app:iconPadding="6dp"
-            app:iconTint="#C145EF"
+            app:iconTint="#D76BFF"
+            app:iconTintMode="src_in"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -95,7 +96,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/arm"
-            app:layout_constraintVertical_bias="0.265" />
+            app:layout_constraintVertical_bias="0.257" />
 
         <Button
             android:id="@+id/tzkum"
@@ -116,7 +117,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etit"
-            app:layout_constraintVertical_bias="0.265" />
+            app:layout_constraintVertical_bias="0.258" />
 
         <Button
             android:id="@+id/bz"
@@ -128,12 +129,14 @@
             android:height="50dp"
             android:background="#00FFFFFF"
             android:text="@string/BZ"
-            android:textColor="#C145EF"
+            android:textColor="#D76BFF"
             android:textSize="15dp"
+            android:textStyle="normal"
             app:icon="@drawable/bz"
             app:iconGravity="textTop"
-            app:iconPadding="22dp"
-            app:iconTint="#C145EF"
+            app:iconPadding="15dp"
+            app:iconTint="#D76BFF"
+            app:iconTintMode="src_in"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

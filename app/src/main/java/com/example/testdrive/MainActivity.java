@@ -130,9 +130,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.9maj.rs/index.php/novosti/projekti"));
                 startActivity(browserIntent);
                 break;
-            case R.id.raspored_casova:
-                browserIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://9maj.rs/images/docs/raspored/2209/odeljenja_8sep.pdf"));
-                startActivity(browserIntent);
             default:
                 break;
         }

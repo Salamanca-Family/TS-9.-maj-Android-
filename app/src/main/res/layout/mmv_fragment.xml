@@ -19,7 +19,7 @@
         android:autoText="false"
         android:text="Механичар моторних возила"
         android:textAlignment="center"
-        android:textColor="#C145EF"
+        android:textColor="#D76BFF"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

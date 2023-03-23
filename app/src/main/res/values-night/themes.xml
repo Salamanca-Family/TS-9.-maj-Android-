@@ -2,15 +2,22 @@
     <!-- Base application theme. -->
     <style name="Theme.TestDrive" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/header_night</item>
+        <item name="colorPrimaryVariant">@color/header_text_night</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/sidemenu_text_night</item>
+        <item name="colorSecondaryVariant">@color/header_text_night</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="drawerArrowStyle">@style/DrawerArrowToggle</item>
+    </style>
+
+    <style name="DrawerArrowToggle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/black</item>
     </style>
 </resources>

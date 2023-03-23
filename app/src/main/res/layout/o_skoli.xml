@@ -227,22 +227,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/more_info3" />
-
-        <TextView
-            android:id="@+id/more_info3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:paddingStart="10dp"
-            android:text="Психолог: Сања Ратковић +381 (0)21 751 061\nE-mail: psiholog@ts9maj.edu.rs"
-            android:textAlignment="viewStart"
-            android:textColor="#D6D4D5"
-            android:textSize="16dp"
-            android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/more_info4" />
 
         <TextView
@@ -251,7 +235,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:paddingStart="10dp"
-            android:text="Педагог: Виолета Дамјановић +381 (0)21 754 417\nE-mail: pedagog@ts9maj.edu.rs\nE-посетница"
+            android:text="Педагог: Виолета Дамјановић +381 (0)21 754 417\nE-mail: pedagog@ts9maj.edu.rs"
             android:textAlignment="viewStart"
             android:textColor="#D6D4D5"
             android:textSize="16dp"

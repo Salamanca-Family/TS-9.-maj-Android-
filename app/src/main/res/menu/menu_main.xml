@@ -35,26 +35,5 @@
         </menu>
     </item>
 
-    <item
-        android:id="@+id/za_ucenike"
-        android:orderInCategory="103"
-        android:title="За ученике">
-        <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/raspored_casova"
-                    android:icon="@drawable/baseline_calendar_today_24"
-                    android:orderInCategory="101"
-                    android:title="Распоред часова" />
-                <item
-                    android:id="@+id/udzbenici"
-                    android:icon="@drawable/baseline_menu_book_24"
-                    android:orderInCategory="102"
-                    android:title="Уџбеници" />
-            </group>
-        </menu>
-    </item>
-
-
 
 </menu>
