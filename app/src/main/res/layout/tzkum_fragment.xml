@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/android_background"
-    android:backgroundTint="#7E000000"
-    android:backgroundTintMode="src_over" >
+    android:backgroundTint="@color/background_tint"
+    android:backgroundTintMode="src_over">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -88,7 +88,7 @@
             android:autoText="false"
             android:text="Техничар за компјутерско управљање (CNC) машина"
             android:textAlignment="center"
-            android:textColor="#9BFD55"
+            android:textColor="@color/title_green"
             android:textSize="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +103,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="380dp"
             android:layout_marginBottom="40dp"
-            android:background="#72000000"
+            android:background="@color/list_back"
             android:clickable="false"
             android:contextClickable="false"
             android:fastScrollAlwaysVisible="true"

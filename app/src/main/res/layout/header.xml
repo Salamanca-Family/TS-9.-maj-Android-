@@ -4,7 +4,7 @@
     android:id="@+id/header_layout"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="#EED491"
+    android:background="@color/header"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingRight="10dp"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="Техничка школа &quot;9. мај&quot;"
         android:textAlignment="textEnd"
-        android:textColor="#2E2D2D"
+        android:textColor="@color/header_text"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -35,7 +35,7 @@
         android:layoutDirection="ltr"
         android:text="📞 +381(21) 6041 472"
         android:textAlignment="viewEnd"
-        android:textColor="#2E2D2D" />
+        android:textColor="@color/header_text" />
 
     <TextView
         android:id="@+id/mail"
@@ -44,5 +44,5 @@
         android:layoutDirection="ltr"
         android:text="✉ skola@9maj.rs"
         android:textAlignment="viewEnd"
-        android:textColor="#2E2D2D" />
+        android:textColor="@color/header_text" />
 </LinearLayout>
