@@ -42,7 +42,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/header"
-            android:backgroundTint="@color/toolbar_tint"
             android:backgroundTintMode="src_over"
             android:gravity="center"
             android:layoutDirection="rtl"

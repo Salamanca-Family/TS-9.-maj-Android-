@@ -6,7 +6,7 @@
     <color name="sidemenu_text">#C3C2C0</color>
     <color name="sidemenu_icon">#000000</color>
     <color name="sidemenu_header_text">#E193918E</color>
-    <color name="toolbar_tint">#34000000</color>
+    <color name="toolbar_tint">#191F1F1F</color>
     <color name="background_tint">#7E000000</color>
     <color name="list_back">#8A101010</color>
     <color name="list_text_blue">#BDFFF7</color>
